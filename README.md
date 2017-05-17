@@ -4,7 +4,7 @@ Precision Encrypting software that turns a 1 mb textfile into a 50 mb one with f
 
 
 
-<b> This software is made for educational purpose only, cannot and will not be held liable for any misuse </b>
+<b> THIS SOFTWARE IS MADE FOR EDUCATIONAL PURPOSES ONLY, CANNOT AND WILL NOT BE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </b>
 
 
-Copyright (c) 2017 Exylus
+Copyright (c) 2017 Exylus, under MIT License.
