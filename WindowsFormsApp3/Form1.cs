@@ -2,7 +2,6 @@
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp3
 {
@@ -15,6 +14,7 @@ namespace WindowsFormsApp3
             InitializeComponent();
         }
         public bool txt1clicked = false;
+
         private void button1_Click(object sender, EventArgs e)
         {
                                                      //Setting customizable security level for Encryption.
@@ -28,17 +28,22 @@ namespace WindowsFormsApp3
             }                                                           //
         }                                                               
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender,EventArgs e)
         {
+
                                                      //Setting customizable security level for Decryption.
             decimal security = numericUpDown1.Value; //
             int i = 0;                               //
-
             while (i < security)                                        //Loop.
             {                                                           //Decrypts the wished security levels.
                 textBox1.Text = EncryptDecrypt.Decrypt(textBox1.Text);  //
                 i = i + 1;                                              //
             }                                                           //
+        }
+
+        private void textbox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = ("");
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
@@ -58,24 +63,27 @@ namespace WindowsFormsApp3
             }
         }
 
-        private void TextBox1_Click(object sender, System.EventArgs e) 
-        {
-            txt1clicked = true;
 
-            if (textBox1.Text == "Type in some text to encrypt or decrypt, use the [Paste] button if errors pop up while decrypting.")
-            {
-                if (txt1clicked == true) //when textbox is clicked, instructions in box will disappear.
-                {                        //
-                    textBox1.Text = "";  //
-                }                        //
-            }
-        }
-        private void button6_Click(object sender, EventArgs e)  
+        private void button6_Click(object sender, EventArgs e)
         {              //
             Close();   //Force quits software and all dependencies it started.
         }              //
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBox1.Text);
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBox1.Text);
+            textBox1.Clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = (Clipboard.GetText());
+        }
     }
     #region Class
     #region EncryptDecryt 
