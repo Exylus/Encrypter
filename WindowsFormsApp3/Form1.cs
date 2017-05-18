@@ -11,73 +11,75 @@ namespace WindowsFormsApp3
 
         public Form1()  
         {   
+            //Initializing Form1 and its components.
             InitializeComponent();
         }
         public bool txt1clicked = false;
         private void button1_Click(object sender, EventArgs e)
         {
-            decimal security = numericUpDown1.Value;
-            int i = 0;
-            while (i < security)
-            {
-                textBox1.Text = EncryptDecrypt.Encrypt(textBox1.Text);
-                i = i + 1;
-            }
-        }
+                                                     //Setting customizable security level for Encryption.
+            decimal security = numericUpDown1.Value; //
+            int i = 0;                               //
+
+            while (i < security)                                        //Loop
+            {                                                           //Encrypts the wished security levels.
+                textBox1.Text = EncryptDecrypt.Encrypt(textBox1.Text);  //
+                i = i + 1;                                              //
+            }                                                           //
+        }                                                               
 
         private void button2_Click(object sender, EventArgs e)
         {
-            decimal security = numericUpDown1.Value;
-            int i = 0;
-            while (i < security)
-            {
-                textBox1.Text = EncryptDecrypt.Decrypt(textBox1.Text);  
-                i = i + 1;
-            }
+                                                     //Setting customizable security level for Decryption.
+            decimal security = numericUpDown1.Value; //
+            int i = 0;                               //
+
+            while (i < security)                                        //Loop.
+            {                                                           //Decrypts the wished security levels.
+                textBox1.Text = EncryptDecrypt.Decrypt(textBox1.Text);  //
+                i = i + 1;                                              //
+            }                                                           //
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            if (numericUpDown1.Value < 0)
+            if (numericUpDown1.Value < 0) //makes it so that value cannot go below 1.
+            {                             //
+                numericUpDown1.Value = 1; //
+            }                             //
+
+            if (numericUpDown1.Value > 4) //minimal level at which the alertbox is triggered.
             {
-                numericUpDown1.Value = 1;
-            }
-            if (numericUpDown1.Value > 4)
-            {
-                if(numericUpDown1.Value <= 6)
-                {
-                    MessageBox.Show("Using a security level above 4 REQUIRES a large amount of memory or errors will occur!");
+                if(numericUpDown1.Value <= 6) //maximal level at which the alertbox is triggered.
+                {                             //(so that it doesn't annoy the alerted user for too long) 
+                    MessageBox.Show("Using a security level above 4 REQUIRES a large amount of memory or errors will occur!"); //Warning message.
                 }
                 
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void TextBox1_Click(object sender, System.EventArgs e)
+        private void TextBox1_Click(object sender, System.EventArgs e) 
         {
             txt1clicked = true;
 
             if (textBox1.Text == "Type in some text to encrypt or decrypt, use the [Paste] button if errors pop up while decrypting.")
             {
-                if (txt1clicked == true)
-                {
-                    textBox1.Text = "";
-                }
+                if (txt1clicked == true) //when textbox is clicked, instructions in box will disappear.
+                {                        //
+                    textBox1.Text = "";  //
+                }                        //
             }
         }
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void button6_Click(object sender, EventArgs e)  
+        {              //
+            Close();   //Force quits software and all dependencies it started.
+        }              //
 
 
-    }
+    }s
     #region Class
-    #region EncryptDecryt
-    public class EncryptDecrypt
+    #region EncryptDecryt 
+    public class EncryptDecrypt //Encryption process, will not be explained, for obvious reason.
     {
         public EncryptDecrypt()
         {
@@ -143,7 +145,7 @@ namespace WindowsFormsApp3
             return text;
         }
     }
-    #endregion
+    #endregion  
     #endregion
 
 }
