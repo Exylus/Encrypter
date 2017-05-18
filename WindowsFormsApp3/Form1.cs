@@ -76,7 +76,7 @@ namespace WindowsFormsApp3
         }              //
 
 
-    }s
+    }
     #region Class
     #region EncryptDecryt 
     public class EncryptDecrypt //Encryption process, will not be explained, for obvious reason.
