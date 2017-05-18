@@ -46,14 +46,19 @@ namespace WindowsFormsApp3
             {
                 numericUpDown1.Value = 1;
             }
-            if (numericUpDown1.Value > 5)
+            if (numericUpDown1.Value > 4)
             {
-                if(numericUpDown1.Value <= 7)
+                if(numericUpDown1.Value <= 6)
                 {
-                    MessageBox.Show("Using a security level above 5 REQUIRES a large amount of memory or errors will occur!");
+                    MessageBox.Show("Using a security level above 4 REQUIRES a large amount of memory or errors will occur!");
                 }
                 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
     #region Class
