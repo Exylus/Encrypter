@@ -8,3 +8,12 @@ c:\users\exylus\documents\visual studio 2017\Projects\WindowsFormsApp3\WindowsFo
 c:\users\exylus\documents\visual studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
 C:\Users\Exylus\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.CodeAnalysisLog.xml
 C:\Users\Exylus\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.lastcodeanalysissucceeded
+C:\Users\Exylus\Source\Repos\Encrypter\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\Exylus\Source\Repos\Encrypter\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\Exylus\Source\Repos\Encrypter\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\Exylus\Source\Repos\Encrypter\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojResolveAssemblyReference.cache
+C:\Users\Exylus\Source\Repos\Encrypter\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\Exylus\Source\Repos\Encrypter\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\Exylus\Source\Repos\Encrypter\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.Cache
+C:\Users\Exylus\Source\Repos\Encrypter\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\Exylus\Source\Repos\Encrypter\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb

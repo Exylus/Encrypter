@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
+
         public Form1()  
         {   
             InitializeComponent();
         }
-
+        public bool txt1clicked = false;
         private void button1_Click(object sender, EventArgs e)
         {
             decimal security = numericUpDown1.Value;
@@ -60,6 +56,24 @@ namespace WindowsFormsApp3
         {
 
         }
+        private void TextBox1_Click(object sender, System.EventArgs e)
+        {
+            txt1clicked = true;
+
+            if (textBox1.Text == "Type in some text to encrypt or decrypt, use the [Paste] button if errors pop up while decrypting.")
+            {
+                if (txt1clicked == true)
+                {
+                    textBox1.Text = "";
+                }
+            }
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
     }
     #region Class
     #region EncryptDecryt
